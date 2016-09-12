@@ -1,0 +1,74 @@
+body {
+  background: url("http://courses.cs.washington.edu/courses/cse190m/09sp/homework/1/silverware.jpg");
+}
+h1, h3 {
+    background-color: #F0F0F0;
+    text-decoration: underline;
+    font-weight: bold;
+    font-family: Century Gothic, Futura, Verdana, sans-serif;
+}
+h1 {
+  letter-spacing: 0.2em;
+  width: 150pt;
+  font-size: 30pt;
+  text-align: center;
+  color: #A4A400;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50pt;
+}
+h2 {
+  position: relative;
+  text-align: center;
+  transform: translate(0%, -100%);
+}
+th {
+  font-size: 18pt;
+  padding-top: 5pt;
+  padding-bottom: 5pt;
+  background-color: #A0A0A0;
+  max-width: 185pt;
+}
+caption {
+  font-family: "serif";
+  font-size: 20pt;
+  padding-bottom: 3%;
+}
+table, tr, td, th {
+  border: solid;
+  border-width: 1px;
+  border-color: #808080;
+  margin: auto;
+  border-collapse: collapse;
+  padding: 10pt;
+}
+table {
+  margin-top: 20pt;
+  margin-bottom: 20pt;
+}
+table img {
+  height: 180pt;
+  width: 180pt;
+}
+h3 {
+  text-align: center;
+  margin-top: 20pt;
+  font-weight: normal;
+  font-size: 20pt;
+  color: #A4A400;
+}
+div>a>img {
+  margin: auto;
+  clear: both;
+  display: block;
+}
+body>p {
+  margin-left: 30pt;
+  margin-right: 30pt;
+  background-color: #f0f0b0;
+  font-size: 15pt;
+  padding-top: 20pt;
+  padding-bottom: 20pt;
+  padding-left: 40pt;
+}
