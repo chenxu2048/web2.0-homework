@@ -1,0 +1,104 @@
+body {
+  background-image: url("images/background.png");
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size: 8pt;
+}
+
+div#banner {
+  display: block;
+  background-image: url("images/bannerbackground.png");
+  text-align: center;
+  background-repeat: repeat-x;
+}
+div#overview {
+  float: right;
+  width: 250px;
+  background-color: #A2B964;
+  font-family: Arial, sans-serif;
+}
+div#overview dl {
+  margin: 10px;
+}
+
+div#rotten span {
+  font-size: 48pt;
+  font-weight: bold;
+  color: red;
+}
+div#rotten img {
+  height: 83px;
+  vertical-align: bottom;
+}
+div#rotten {
+  display: block;
+  color: white;
+  height: 83px;
+  background-image: url("images/rottenbackground.png");
+}
+
+div#overview dt {
+  font-weight: bold;
+  margin-top: 1em;
+}
+
+div#left-central-section {
+  width: 550px;
+}
+
+div#main-container {
+  width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 4px solid gray;
+}
+
+div#link {
+  bottom: 0px;
+  right: 0px;
+  position: fixed;
+}
+
+h1 {
+  text-align: center;
+  font-size: 24pt;
+  font-family: Tahoma, Verdana, sans-serif;
+}
+
+div.column {
+  width: 47%;
+  margin-left: 2%;
+  float: left;
+}
+
+div, p {
+  overflow: hidden;
+}
+
+p.review {
+  padding: 8px;
+  border: solid grey 2px;
+  background-color: #E1D697;
+  font-weight: bold;
+}
+div.column img {
+  float: left;
+  margin-right: 5px;
+}
+p.personal-information {
+  margin-bottom: 3em;
+}
+
+p.personal-information span {
+  font-style: italic;
+}
+
+p#foot-page {
+  text-align: center;
+  background-color: #A2B964;
+  clear: left;
+  clear: right;
+  margin: 0;
+  padding: 5px;
+}
