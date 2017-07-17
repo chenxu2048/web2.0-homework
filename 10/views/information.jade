@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title info
+    link(rel='shortcut icon', type='image/png', href='/images/icon/info_icon.png')
+    link(href='/css/information.css', type='text/css', rel='stylesheet')
+    script(src='/js/jquery.js')
+    script(src='/js/logout.js')
+    meta(charset='utf-8')
+  body
+    h1 详情
+    if cheat
+      #alert 只能够访问自己的数据
+    #info
+      form#info-body(action='/logout', method='POST')
+        h2 用户详情
+        #row_username.info-row
+          #username-div 用户名: 
+          input#username(readonly='readonly', type='text', name='username', value='#{username}')
+        #row_id.info-row
+          #id-div 学号: 
+          input#id(readonly='readonly', type='text', name='id', value='#{id}')
+        #row-phone.info-row
+          #phone-div 电话: 
+          input#phone(readonly='readonly', type='text', name='phone', value='#{phone}')
+        #row-email.info-row
+          #email-div 邮箱: 
+          input#email(readonly='readonly', type='text', name='email', value='#{email}')
+      input#return.button(type='button', value='登出')
+      //- input#modify.button(type='button', value='修改密码')
+      //- input#delete.button(type='button', value='删除账户')

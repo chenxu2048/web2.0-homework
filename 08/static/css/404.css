@@ -1,0 +1,15 @@
+body {
+  background-color: #EEEEEE;
+}
+h1, h2 {
+  margin: 20px auto auto auto;
+  text-align: center;
+  font-size: 30px;
+}
+
+img {
+  margin: 90px auto 45px auto;
+  height: 130px;
+  width: 200px;
+  display: block;
+}

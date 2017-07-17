@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Calculator</title>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" type="text/css" href="css/calculator.css"/>
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/lodash.js"></script>
+    <script src="js/calculator.js"></script>
+  </head>
+  <body>
+    <div id="calculator-container">
+      <div id="calculator">
+        <div id="screen">
+          <div id="prev-expression"></div>
+          <div id="expression">0</div>
+        </div>
+        <div id="calculator-body">
+          <div id="col_1" class="column">
+            <button type="button" id="clear-error" class="fn">CE</button>
+            <button type="button" id="left-bracket" class="opr">(</button>
+            <button type="button" id="right-bracket" class="opr">)</button>
+            <button type="button" id="divide" class="opr">/</button>
+          </div>
+          <div id="col_2" class="column">
+            <button type="button" id="num_7" class="num">7</button>
+            <button type="button" id="num_8" class="num">8</button>
+            <button type="button" id="num_9" class="num">9</button>
+            <button type="button" id="multipe" class="opr">*</button>
+          </div>
+          <div id="col_3" class="column">
+            <button type="button" id="num_4" class="num">4</button>
+            <button type="button" id="num_5" class="num">5</button>
+            <button type="button" id="num_6" class="num">6</button>
+            <button type="button" id="subtract" class="opr">-</button>
+          </div>
+          <div id="col_4" class="column">
+            <button type="button" id="num_1" class="num">1</button>
+            <button type="button" id="num_2" class="num">2</button>
+            <button type="button" id="num_3" class="num">3</button>
+            <button type="button" id="add" class="opr">+</button>
+          </div>
+          <div id="col_5" class="column">
+            <button type="button" id="num_0" class="num">0</button>
+            <button type="button" id="dot" class="num">.</button>
+            <button type="button" id="del" class="fn">←</button>
+            <button type="button" id="equal" class="opr">=</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,324 @@
+/*
+author: 15331038-陈序
+created at 09-24-2016
+The MWP code 03 -- Ring Menu
+*/
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+#at-plus-container {
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+  width: 200px;
+  position: relative;
+}
+#bottom-positioner {
+  width: 200px;
+  height: 200px;
+  bottom: 0;
+  position: absolute;
+}
+
+.info {
+  height: 70px;
+  width: 70px;
+  margin: 30px;
+  display: inline-block;
+}
+
+#button {
+  bottom: 0;
+  height: 30px;
+  width: 30px;
+  margin: 0 auto 170px auto;
+  -webkit-transition: all 0.45s 0.15s;
+     -moz-transition: all 0.45s 0.15s;
+      -ms-transition: all 0.45s 0.15s;
+       -o-transition: all 0.45s 0.15s;
+          transition: all 0.45s 0.15s;
+}
+button:hover {
+  -webkit-transition: all 0.3s 0.1s;
+     -moz-transition: all 0.3s 0.1s;
+      -ms-transition: all 0.3s 0.1s;
+       -o-transition: all 0.3s 0.1s;
+          transition: all 0.3s 0.1s;
+}
+
+
+/*
+the info-bar is invisable and no height, no width at first.
+*/
+#info-bar {
+  border-radius: 50%;
+  width: 1px;
+  height: 0px;
+  /* change alpha to conver black to gray */
+  background-color: rgba(0, 0, 0, 0.55);
+  position: absolute;
+  left: 100px;
+  color: white;
+  bottom: 180px;
+  -webkit-transition: all 0.45s 0.15s;
+     -moz-transition: all 0.45s 0.15s;
+      -ms-transition: all 0.45s 0.15s;
+       -o-transition: all 0.45s 0.15s;
+          transition: all 0.45s 0.15s;
+}
+/*
+after the button has hovered, the info-bar is visable.
+the value of transition and transition-delay shows the behavior when the info-bar is recovering.
+*/
+#button:hover #info-bar {
+  width: 130px;
+  height: 130px;
+  left: 35px;
+  bottom: 240px;
+  -webkit-transition: all 0.3s 0.1s;
+     -moz-transition: all 0.3s 0.1s;
+      -ms-transition: all 0.3s 0.1s;
+       -o-transition: all 0.3s 0.1s;
+          transition: all 0.3s 0.1s;
+}
+
+li.button, #info-bar {
+  font-family: Arial, Helvetica, sans-serif;
+  cursor: default;
+          user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+li, span, ul {
+  -webkit-transition: all 0.45s 0.15s;
+     -moz-transition: all 0.45s 0.15s;
+      -ms-transition: all 0.45s 0.15s;
+       -o-transition: all 0.45s 0.15s;
+          transition: all 0.45s 0.15s;
+}
+li {
+  opacity: 0;
+  position: absolute;
+  list-style-type: none;
+}
+
+#button:hover li, #button:hover span{
+  opacity: 1;
+  -webkit-transition: all 0.3s 0.1s;
+  -moz-transition: all 0.3s 0.1s;
+  -ms-transition: all 0.3s 0.1s;
+  -o-transition: all 0.3s 0.1s;
+  transition: all 0.3s 0.1s;
+}
+
+#info-bar, span#total, #info-bar div.info {
+  height: 0;
+  width: 0;
+  font-size: 10px;
+  text-align: center;
+  display: block;
+}
+
+#button:hover span#total {
+  font-weight: 600;
+  width: 70px;
+  text-align: center;
+  height: 70px;
+  font-size: 35px;
+  line-height: 65px;
+}
+
+
+
+/* the ring menu */
+#control-ring-container {
+  border: 1px solid rgba(0, 0, 0, 0);
+  border-radius: 50%;
+  height: 0;
+  width: 0;
+  -webkit-transition: all 0.45s 0.15s;
+  -moz-transition: all 0.45s 0.15s;
+  -ms-transition: all 0.45s 0.15s;
+  -o-transition: all 0.45s 0.15s;
+  transition: all 0.45s 0.15s;
+}
+#button:hover #control-ring-container {
+  height: 160px;
+  width: 160px;
+  margin: -71px 0 0 -70px;
+  -webkit-transition: all 0.3s 0.1s;
+  -moz-transition: all 0.3s 0.1s;
+  -ms-transition: all 0.3s 0.1s;
+  -o-transition: all 0.3s 0.1s;
+  transition: all 0.3s 0.1s;
+}
+
+
+li.button {
+  background-color: rgba(0, 0, 0, 0.55);
+  height: 35px;
+  width: 35px;
+  transform: scale(0.5);
+  color: white;
+  text-align: center;
+  left: 85px;
+  font-weight: bolder;
+  font-size: 15pt;
+  line-height: 35px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 50%;
+  border-radius: 50%;
+}
+
+li.button.enable, #info-bar.enable {
+  cursor: pointer;
+  background-color: rgb(34, 72, 157);
+}
+
+#button:hover li.A {
+  transform: translate(-51px, 18px) scale(1);
+}
+
+
+#button:hover li.B {
+  transform: translate(-69px, 57px) scale(1);
+}
+
+
+#button:hover li.C {
+  transform: translate(-53px, 104px) scale(1);
+} 
+
+
+#button:hover li.D {
+  transform: translate(-10px, 126px) scale(1);
+}
+
+
+#button:hover li.E {
+  transform: translate(37px, 108px) scale(1);
+}
+
+
+li.button span{
+  background-color: red;
+  color: rgb(255, 255, 255);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  position: absolute;
+  font-size: 10pt;
+  line-height: 18px;
+  transform: translate(0px, -4px);
+  opacity: 0;
+}
+#button:hover span {
+  opacity: 1;
+  -webkit-transition: all 0.1s 0s;
+  -moz-transition: all 0.1s 0s;
+  -ms-transition: all 0.1s 0s;
+  -o-transition: all 0.1s 0s;
+  transition: all 0.1s 0s;
+}
+#button:hover span.hide {
+  opacity: 0;
+}
+
+/*
+the container of button icon and the atplus.
+*/
+div.apb {
+  background-color: rgba(0, 0, 0, 0.46);
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 85px;
+  -webkit-transition: all 0.6s 0.6s;
+     -moz-transition: all 0.6s 0.6s;
+      -ms-transition: all 0.6s 0.6s;
+       -o-transition: all 0.6s 0.6s;
+          transition: all 0.6s 0.6s;
+  /* 0.6s = 0.45s + 0.15s */
+}
+#button:hover div.apb {
+  background-color: rgb(34, 71, 159);
+  height: 50px;
+  width: 50px;
+  top: -15px;
+  left: 75px;
+  -webkit-transition: all 0.5s 0s;
+  -moz-transition: all 0.5s 0s;
+  -ms-transition: all 0.5s 0s;
+  -o-transition: all 0.5s 0s;
+  transition: all 0.5s 0s;
+}
+div.icon {
+  background-image: url("../assets/images/atplus_white.png");
+  background-size: 80% 60%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.6s 0.6s;
+     -moz-transition: all 0.6s 0.6s;
+      -ms-transition: all 0.6s 0.6s;
+       -o-transition: all 0.6s 0.6s;
+          transition: all 0.6s 0.6s;
+  /* 0.6s = 0.45s + 0.15s */
+}
+#button:hover div.icon {
+  background-image: url("../assets/images/atplus_green.png");
+  background-size: 56% 42%;
+  -webkit-transition: all 0.5s 0s;
+     -moz-transition: all 0.5s 0s;
+      -ms-transition: all 0.5s 0s;
+       -o-transition: all 0.5s 0s;
+          transition: all 0.5s 0s;
+}
+/* The code for test*/
+/*
+* {
+  transition: 0.45s;
+  transition-delay: 0.15s;
+}
+#button:hover * {
+  transition: 1s;
+  transition-delay: 0.3s;
+}
+*/
+div#order, #message {
+  font-size: 25px;
+  font-weight: 600;
+  font-family: monospace;
+  color: white;
+  height: 50px;
+  width: 200px;
+  text-align: center;
+  border-radius: 10px;
+  top: -250px;
+  position: absolute;
+  background-color: #737373;
+  padding: 0;
+  line-height: 50px;
+}
+
+div#message {
+  font-size: 20px;
+  font-weight: normal;
+  width: 450px;
+  transform: translate(-125px, -70px);
+}

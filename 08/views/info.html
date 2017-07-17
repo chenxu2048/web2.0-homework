@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>info</title>
+    <link rel="shortcut icon" type="image/png" href="/static/assets/icon/info_icon.png"/>
+    <link href="/static/css/info.css" type="text/css" rel="stylesheet"/>
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/info.js"></script>
+    <meta charset="utf-8"/>
+  </head><body>
+    <h1>详情</h1>
+    <div id="info-body">
+      <h2>用户详情</h2>
+      
+      <div class="info-row" id="row_username">
+        <div id="username-div">用户名: </div>
+        <input readonly="readonly" id="username" type="text" name="username" value="${username}"/>
+      </div>
+      <div class="info-row" id="row_id">
+        <div id="id-div">学号: </div>
+        <input readonly="readonly" id="id" type="text" name="id" value="${id}"/>
+      </div>
+      <div class="info-row" id="row-phone">
+        <div id="phone-div">电话: </div>
+        <input readonly="readonly" id="phone" type="text" name="phone" value="${phone}"/>
+      </div>
+      <div class="info-row" id="row-email">
+        <div id="email-div">邮箱: </div>
+        <input readonly="readonly" id="email" type="text" name="email" value="${email}"/>
+      </div>
+      <input id="return" type="button" value="返回"/>
+    </div>
+</html>

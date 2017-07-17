@@ -1,0 +1,186 @@
+/*
+* {
+  background: rgba(0, 0, 0, 0.03);
+  border: rgba(0, 0, 0, 0.03) 0.3px solid;
+}
+*/
+
+
+h1 {
+  text-align: center;
+  margin-bottom: 35px;
+  font-size: 35px;
+}
+
+div {
+  border: none;
+          user-select: none;
+     -moz-user-select: none;
+  -webkit-user-select: none;
+}
+
+#puzzle-position {
+  position: relative;
+}
+
+#puzzle-position, #puzzle-container {
+  margin: auto;
+  height: 500px;
+  width: 800px;
+}
+
+div#message {
+  font-size: 30px;
+  color: white;
+  height: 40px;
+  width: 250px;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.47);
+  border-radius: 15px;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 10px;
+  top: 220px;
+  left: 115px;
+}
+
+.hide-message {
+  opacity: 0;
+  z-index: -1;
+}
+
+.show-message {
+  opacity: 1;
+}
+
+#puzzle-body {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+div#puzzle-body {
+  /*background: url("asset/image/raw/panda.jpg") no-repeat;
+  background-size: 500px 500px;*/
+  height: 500px;
+  width: 500px;
+  float: left;
+}
+
+div#puzzle-side-bar {
+  margin: 20px;
+  height: 460px;
+  width: 260px;
+  float: left;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  margin: 0 30px 0 30px;
+}
+
+div#timer, div#step-number, div#start {
+  border-radius: 5px;
+  padding: 2px 10px 2px 10px;
+  background-color: rgba(0, 0, 0, 0.13);
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 30px;
+  width: 100px;
+  margin: 20px auto 0 auto;
+  text-align: center;
+}
+
+div#minute, div#second {
+  font-size: 26px;
+  height: inherit;
+  width: 40px;
+}
+
+div#minute {
+  float: left;
+  text-align: right;
+}
+
+div#second {
+  float: right;
+  text-align: left;
+}
+
+div#start {
+  position: absolute;
+  bottom: 30px;
+  right: 90px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+div#start:active {
+  background-color: rgba(0, 0, 0, 0.33);
+}
+
+div.piece, div.piece-none {
+  height: 123px;
+  width: 123px;
+  float: left;
+  margin: 1px;
+  border: none;
+}
+
+.piece:hover {
+  margin: 0;
+  height: 125px;
+  width: 125px;
+          box-shadow: 0px 0px 13px rgba(0, 255, 173, 0.64);
+      -moz-box-shadow: 0px 0px 13px rgba(0, 255, 173, 0.64);
+  -webkit-box-shadow: 0px 0px 13px rgba(0, 255, 173, 0.64);
+  z-index: 10;
+  cursor: pointer;
+}
+
+.piece {
+  background: url("asset/image/raw/panda.jpg") no-repeat;
+  background-size: 500px 500px;
+  border-radius: 5px;
+}
+
+div.piece-none {
+  background: none;
+}
+
+.init-piece {
+  position: absolute;
+  top: 187.5px;
+  left: 187.5px;
+}
+
+.col0 {
+  background-position-x: -2px;
+}
+
+.col1 {
+  background-position-x: -127px;
+}
+
+.col2 {
+  background-position-x: -252px;
+}
+
+.col3 {
+  background-position-x: -377px;
+}
+
+.row0 {
+  background-position-y: -2px;
+}
+
+.row1 {
+  background-position-y: -127px;
+}
+
+.row2 {
+  background-position-y: -252px;
+}
+
+.row3 {
+  background-position-y: -377px;
+}

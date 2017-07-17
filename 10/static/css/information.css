@@ -1,0 +1,68 @@
+body {
+  background-color: #EEEEEE;
+}
+#info {
+  padding: 10px 15px;
+  margin: auto;
+  height: 320px;
+  width: 360px;
+  border-radius: 25px;
+  background-color: #F6F6F6;
+}
+h1, h2 {
+  text-align: center;
+}
+h2 {
+  margin: 15px;
+}
+
+.info-row {
+  margin: auto;
+  height: 50px;
+  width: 300px;
+}
+
+.info-row > * {
+  margin: 0;
+  font-size: 18px;
+  height: 25px;
+  text-align: center;
+}
+
+.info-row div {
+  width: 60px;
+  display: inline-block;
+}
+
+.info-row input {
+  border: none;
+  border-bottom: 1px solid #C0C0C0;
+  background-color: #FFFFFF;
+  float: right;
+  width: 225px;
+  padding: 0;
+}
+.button {
+  height: 35px;
+  border: none;
+  margin: 0 20px 0 0;
+  padding: 0;
+  font-size: 18px;
+  float: right;
+  text-align: center;
+  background-color: buttonface;
+}
+
+#return {
+  width: 60px;
+}
+#delete, #modify {
+  width:90px;
+}
+
+div#alert {
+  text-align: center;
+  margin: -10px auto 10px auto;
+  font-size: 23px;
+  color: red;
+}

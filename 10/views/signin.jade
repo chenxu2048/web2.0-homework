@@ -1,0 +1,23 @@
+doctype html
+html(lang='zh-cn')
+  head
+    title Sign In
+    meta(charset='utf-8')
+    link(rel='shortcut icon', type='image/png', href='/images/icon/signin_icon.png')
+    link(href='/css/signin.css', type='text/css', rel='stylesheet')
+    script(src='/js/jquery.js')
+    script(src='/js/login.js')
+  body
+    h1 登陆
+    #signin-body
+      form#signin(action='/signin', method='POST')
+        #row_username.form-row
+          label#username-label 用户名: 
+          input#username(type='text', name='username')
+          #username-wrong.show.message
+        #row_id.form-row
+          label#id-label 密码: 
+          input#id(type='password', name='password')
+        #button
+          input#loginButton(type='button', value='登陆')
+          input#registerButton(type='button', value='注册')

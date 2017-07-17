@@ -1,0 +1,38 @@
+
+th {
+  background-color: #031B7F;
+  color: #FFFFFF;
+  text-align: left;
+  cursor: pointer;
+}
+
+th.select {
+  background-color: #A6AFFC;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #DDDDDD;
+}
+
+div.sort-none {
+  background: inherit;
+}
+
+div.sort-asc {
+  background: url(../asset/icon/ascend.png) 100%;
+}
+
+div.sort-desc {
+  background: url(../asset/icon/descend.png) 100%;
+}
+
+div.sort-none, div.sort-asc, div.sort-desc {
+  height: 20px;
+  width: 20px;
+  float: right;
+}
+
+div.sort-asc, div.sort-desc{
+  background-repeat: no-repeat;
+  background-size: none;
+}

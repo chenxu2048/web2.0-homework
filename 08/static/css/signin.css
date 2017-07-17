@@ -1,0 +1,65 @@
+body {
+  background-color: #EEEEEE;
+}
+div#signin-body {
+  padding: 10px 15px;
+  margin: auto;
+  height: 320px;
+  width: 360px;
+  border-radius: 25px;
+  background-color: #F6F6F6;
+}
+h1, h2 {
+  text-align: center;
+}
+h2 {
+  margin: 15px;
+}
+.form-row {
+  margin: auto;
+  height: 50px;
+  width: 300px;
+}
+.form-row > * {
+  margin: 0;
+  font-size: 18px;
+  height: 25px;
+  text-align: center;
+}
+
+.form-row > input {
+  float: right;
+  width: 225px;
+  padding: 0;
+  text-align: left;
+  border: 1px solid #CCCCCC;
+}
+#submitForm, #resetForm {
+  height: 35px;
+  width: 75px;
+  border: none;
+  margin: 0 30px 0 0;
+  padding: 0;
+  font-size: 18px;
+  float: right;
+}
+
+#resetForm {
+  text-align: center;
+  background-color: buttonface;
+}
+
+div.message {
+  height: 20px;
+  font-size: 10px;
+  float: right;
+  width: 300px;
+  color: red;
+  text-align: right;
+  font-family: arial;
+  opacity: 0;
+}
+
+div.message.show {
+  opacity: 1;
+}

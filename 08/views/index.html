@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+
+<html lang="zh-cn">
+  <head>
+    <title>Sign In</title>
+    <meta charset="utf-8"/>
+    <link rel="shortcut icon" type="image/png" href="/static/assets/icon/signin_icon.png"/>
+    <link href="/static/css/signin.css" type="text/css" rel="stylesheet"/>
+    <script src="/static/js/jquery.js"></script>
+    <script src="/static/js/signin.js"></script>
+  </head>
+  <body>
+    <h1>注册</h1>
+    <div id="signin-body">
+      <h2>用户注册</h2>
+      <form id="signin-register" action="/signin" method="POST">
+        <div class="form-row" id="row_username">
+          <label id="username-label">用户名: </label>
+          <input id="username" type="text" name="username"/>
+          <div id="username-wrong" class="show message"></div>
+        </div>
+        <div class="form-row" id="row_id">
+          <label id="id-label">学号: </label>
+          <input id="id" type="text" name="id"/>
+          <div id="id-wrong" class="show message"></div>
+        </div>
+        <div class="form-row" id="row-phone">
+          <label id="phone-label">电话: </label>
+          <input id="phone" type="text" name="phone"/>
+          <div id="phone-wrong" class="show message"></div>
+        </div>
+        <div class="form-row" id="row-email">
+          <label id="email-label">邮箱: </label>
+          <input id="email" type="text" name="email"/>
+          <div id="email-wrong" class="show message"></div>
+        </div>
+        <div id="button">
+          <input id="submitForm" type="button" value="提交"/>
+          <input id="resetForm" type="button" value="重置"/>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
+
+
+

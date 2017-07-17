@@ -1,0 +1,41 @@
+doctype html
+html(lang='zh-cn')
+  head
+    title Sign In
+    meta(charset='utf-8')
+    link(rel='shortcut icon', type='image/png', href='/images/icon/signin_icon.png')
+    link(href='/css/register.css', type='text/css', rel='stylesheet')
+    script(src='/js/jquery.js')
+    script(src='/js/validator.js')
+  body
+    h1 注册
+    #signin-body
+      form#register(action='/signin', method='POST')
+        #row_username.form-row
+          label#username-label 用户名: 
+          input#username(type='text', name='username')
+          #username-wrong.show.message
+        #row_id.form-row
+          label#id-label 学号: 
+          input#id(type='text', name='id')
+          #id-wrong.show.message
+        #row_password.form-row
+          label#password-label 密码: 
+          input#password(type='password', name='password')
+          #password-wrong.show.message
+        #row_password_repeat.form-row
+          label#password_repeat-label 重复密码: 
+          input#password_repeat(type='password', name='password_repeat')
+          #password_repeat-wrong.show.message
+        #row-phone.form-row
+          label#phone-label 电话: 
+          input#phone(type='text', name='phone')
+          #phone-wrong.show.message
+        #row-email.form-row
+          label#email-label 邮箱: 
+          input#email(type='text', name='email')
+          #email-wrong.show.message
+        #button
+          input#submitForm(type='button', value='提交')
+          input#resetForm(type='button', value='重置')
+          input#return(type='button', value='返回登陆')

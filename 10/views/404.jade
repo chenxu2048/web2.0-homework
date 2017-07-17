@@ -1,0 +1,15 @@
+doctype html
+html(lang='en')
+  head
+    title 404 Not Found
+    link(rel='stylesheet', type='text/css', href='/css/404.css')
+    link(rel='shortcut icon', type='image/png', href='/images/icon/error-404.png')
+    script(src='/js/jquery.js')
+    script(src='/js/404.js')
+  body
+    img(src='/images/404.png')
+    h1 Ah! http://#{host}#{url} is not found. 
+    h2
+      | The page will redirect to http://#{host}/ after 
+      span#second 5
+      |  second.
